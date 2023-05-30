@@ -1,0 +1,18 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Sahibinden Yorum"
+   },
+   "content_scripts": [ {
+      "js": [ "shyorum.js" ],
+      "matches": [ "*://www.sahibinden.com/ilan/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Sahibinden.com ilanlarına yorum yapabilmek için Chrome eklentisi",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApDL4a4Kqo4Qo6od6VOJk4cU31jtiTCmZvCETdY+SCYb8E/P0c4Oe3P6u2zhsUN9/QskDv3QAg8HndiL5X7YWSt1Ch6g7G/OLAfA/Og6a8CHzG3bYqh59pvCGO8oBQMdPmGd2M12lwxOIN6YuJl/PACaME7FzEQIYnjy5IiUktfLfyH7VYURUxJa3hhJbCVvWam2HIdzqHyAStRTlO3nbZ35Jj3RK81CVUxvohnyDW5RdhFzc/bV9zBuAAWFY4vw9hKj61CPnXWGk34byc+3WB3jax4RgNNPhGXPIzj3pmT7WYwlnoaKMDfuZKc9w0GeokEWN7xfapRh6lWGYKgQauQIDAQAB",
+   "manifest_version": 2,
+   "name": "Sahibinden Yorum",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4"
+}
